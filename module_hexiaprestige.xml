@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_hexiaprestige" default="compile.module.hexiaprestige">
+  <dirname property="module.hexiaprestige.basedir" file="${ant.file.module_hexiaprestige}"/>
+  
+  <property name="module.jdk.home.hexiaprestige" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.hexiaprestige" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.hexiaprestige" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.hexiaprestige" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="hexiaprestige.output.dir" value="${module.hexiaprestige.basedir}/target/classes"/>
+  <property name="hexiaprestige.testoutput.dir" value="${module.hexiaprestige.basedir}/target/test-classes"/>
+  
+  <path id="hexiaprestige.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="hexiaprestige.module.production.classpath">
+    <path refid="${module.jdk.classpath.hexiaprestige}"/>
+    <path refid="library.paper-1.12.2-b1618.classpath"/>
+  </path>
+  
+  <path id="hexiaprestige.runtime.production.module.classpath">
+    <pathelement location="${hexiaprestige.output.dir}"/>
+    <path refid="library.paper-1.12.2-b1618.classpath"/>
+  </path>
+  
+  <path id="hexiaprestige.module.classpath">
+    <pathelement location="${hexiaprestige.output.dir}"/>
+    <path refid="${module.jdk.classpath.hexiaprestige}"/>
+    <path refid="library.paper-1.12.2-b1618.classpath"/>
+  </path>
+  
+  <path id="hexiaprestige.runtime.module.classpath">
+    <pathelement location="${hexiaprestige.testoutput.dir}"/>
+    <pathelement location="${hexiaprestige.output.dir}"/>
+    <path refid="library.paper-1.12.2-b1618.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.hexiaprestige">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.hexiaprestige">
+    <patternset refid="excluded.from.module.hexiaprestige"/>
+  </patternset>
+  
+  <path id="hexiaprestige.module.sourcepath">
+    <dirset dir="${module.hexiaprestige.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  <path id="hexiaprestige.module.test.sourcepath">
+    <dirset dir="${module.hexiaprestige.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.hexiaprestige" depends="compile.module.hexiaprestige.production,compile.module.hexiaprestige.tests" description="Compile module HexiaPrestige"/>
+  
+  <target name="compile.module.hexiaprestige.production" depends="register.custom.compilers" description="Compile module HexiaPrestige; production classes">
+    <mkdir dir="${hexiaprestige.output.dir}"/>
+    <javac2 destdir="${hexiaprestige.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.hexiaprestige}/javac">
+      <compilerarg line="${compiler.args.hexiaprestige}"/>
+      <bootclasspath refid="hexiaprestige.module.bootclasspath"/>
+      <classpath refid="hexiaprestige.module.production.classpath"/>
+      <src refid="hexiaprestige.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.hexiaprestige"/>
+    </javac2>
+    
+    <copy todir="${hexiaprestige.output.dir}">
+      <fileset dir="${module.hexiaprestige.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.hexiaprestige.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.hexiaprestige.tests" depends="register.custom.compilers,compile.module.hexiaprestige.production" description="compile module HexiaPrestige; test classes" unless="skip.tests">
+    <mkdir dir="${hexiaprestige.testoutput.dir}"/>
+    <javac2 destdir="${hexiaprestige.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.hexiaprestige}/javac">
+      <compilerarg line="${compiler.args.hexiaprestige}"/>
+      <bootclasspath refid="hexiaprestige.module.bootclasspath"/>
+      <classpath refid="hexiaprestige.module.classpath"/>
+      <src refid="hexiaprestige.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.hexiaprestige"/>
+    </javac2>
+    
+    <copy todir="${hexiaprestige.testoutput.dir}">
+      <fileset dir="${module.hexiaprestige.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.hexiaprestige" description="cleanup module">
+    <delete dir="${hexiaprestige.output.dir}"/>
+    <delete dir="${hexiaprestige.testoutput.dir}"/>
+  </target>
+</project>
