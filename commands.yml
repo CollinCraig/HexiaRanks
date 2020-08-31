@@ -1,0 +1,101 @@
+# Here you can completely disable the commands from being registered in the server. You can also edit the aliases,description,permission,permission-message
+# [Requires server restart]
+commands:
+  rankup:
+    enable: true
+    description: "get promoted to the next rank"
+    permission: "hexia.rankup"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command> [player]"
+    aliases: [ru]
+  rankupmax:
+    enable: true
+    description: "rankup to the latest rank you can reach"
+    permission: "hexia.rankupmax"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command>"
+    aliases: [rumax, maxrankup, maxru]
+  forcerankup:
+    enable: true
+    description: "force promote other players without losing anything"
+    permission: "hexia.forcerankup"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command> <player>"
+    aliases: [forceru]
+  autorankup:
+    enable: true
+    description: "automatically rankup when you have enough money"
+    permission: "hexia.autorankup"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command>"
+    aliases: [autoru, aru]
+  autoprestige:
+    enable: true
+    description: "automatically prestige as long as you have enough money"
+    permission: "hexia.autoprestige"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command>"
+    aliases: [autop, aprestige]
+  autoprestigemaster:
+    enable: true
+    description: "automatically prestige as long as you have enough money"
+    permission: "hexia.autoprestige"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command>"
+    aliases: [autopm, aprestigemaster, apm]
+  ranks:
+    enable: true
+    description: "shows a list of prison ranks"
+    permission: "hexia.ranks"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command>"
+    aliases: [ranklist, showranks]
+  prestige:
+    enable: true
+    description: "get promoted to a higher level of ranks"
+    permission: "hexia.prestige"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command>"
+    aliases: [prst, prestigeup, pup]
+  prestiges:
+    enable: true
+    description: "shows a list of prison prestiges"
+    permission: "hexia.prestiges"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command>"
+    aliases: [prestigelist]
+  master:
+    enable: true
+    description: "reborn again but with amazing stuff"
+    permission: "hexia.master"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command>"
+    aliases: [presmaster, prestigemaster, masterprestige]
+  mastery:
+    enable: true
+    description: "shows a list of prison mastery perks"
+    permission: "hexia.mastery"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command>"
+    aliases: [masterlist, masterylist]
+  hr:
+    enable: true
+    description: "manage players or ranks, prestiges and mastery settings"
+    permission: "hexia.admin"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command>"
+    aliases: [hexranks, hexiaranks]
+  topprestiges:
+    enable: true
+    description: "show players prestiges leaderboard"
+    permission: "hexia.topprestiges"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command>"
+    aliases: [topprestige, tprestige]
+  topmastery:
+    enable: true
+    description: "show players mastery leaderboard"
+    permission: "hexia.topmastery"
+    permission-message: "&cYou don't have permission to execute this command."
+    usage: "/<command>"
+    aliases: [topmastery, tmastery]

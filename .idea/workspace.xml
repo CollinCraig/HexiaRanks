@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="HexiaRanks:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="022ac669-4202-449e-a40e-43fcd2bdfefe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ActionUtil_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/HolographicDisplays_2_4_5_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/LuckPerms_Bukkit_5_1_93.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/MVdWPlaceholderAPI__3_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/PlaceholderAPI_2_10_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/spigot_1_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/spigot_1_16_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/HexiaPrestige_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/HexiaRanks_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/EZPrestige.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Vault.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Paper_1_12_2_b1618.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Paper_1_12_2_b1618.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HexiaPrestige.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HexiaRanks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/API.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/BookUtil_1_14_4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/BookUtil_1_8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/BookUtil_1_9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/ReflectionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/Sound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/Version.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/XMaterial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/TemplatePlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/commands/MainPluginCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/events/block/BlockClick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/events/chat/TabComplete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/events/inventory/InventoryClick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/helpers/ActionSound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/helpers/MenuUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/helpers/Utilities.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gnEXgBjs6HaUNNNtH3tCRaNyRE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.4032258" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="022ac669-4202-449e-a40e-43fcd2bdfefe" name="Default Changelist" comment="" />
+      <created>1598741996495</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598741996495</updated>
+      <workItem from="1598741997794" duration="5613000" />
+      <workItem from="1598890717831" duration="1333000" />
+      <workItem from="1598897555701" duration="2343000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="384" y="119" key="#Project_Structure" timestamp="1598743426952">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state x="384" y="119" key="#Project_Structure/0.23.1792.1031@0.23.1792.1031" timestamp="1598743426952" />
+    <state x="684" y="327" key="FileChooserDialogImpl" timestamp="1598746504364">
+      <screen x="0" y="23" width="1792" height="1028" />
+    </state>
+    <state x="684" y="327" key="FileChooserDialogImpl/0.23.1792.1028@0.23.1792.1028" timestamp="1598746504364" />
+    <state x="759" y="438" key="Github.ShareDialog" timestamp="1598899369715">
+      <screen x="0" y="23" width="1792" height="1026" />
+    </state>
+    <state x="759" y="438" key="Github.ShareDialog/0.23.1792.1026@0.23.1792.1026" timestamp="1598899369715" />
+    <state x="384" y="120" key="SettingsEditor" timestamp="1598897848374">
+      <screen x="0" y="23" width="1792" height="1026" />
+    </state>
+    <state x="384" y="120" key="SettingsEditor/0.23.1792.1024@0.23.1792.1024" timestamp="1598897595248" />
+    <state x="384" y="120" key="SettingsEditor/0.23.1792.1026@0.23.1792.1026" timestamp="1598897848374" />
+    <state x="384" y="120" key="SettingsEditor/0.23.1792.1028@0.23.1792.1028" timestamp="1598746225990" />
+    <state x="384" y="120" key="SettingsEditor/0.23.1792.1030@0.23.1792.1030" timestamp="1598742114497" />
+    <state x="384" y="120" key="SettingsEditor/0.23.1792.1031@0.23.1792.1031" timestamp="1598744457510" />
+    <state x="597" y="291" width="598" height="548" key="find.popup" timestamp="1598898853123">
+      <screen x="0" y="23" width="1792" height="1026" />
+    </state>
+    <state x="597" y="291" width="598" height="548" key="find.popup/0.23.1792.1026@0.23.1792.1026" timestamp="1598898853123" />
+    <state x="597" y="292" width="598" height="548" key="find.popup/0.23.1792.1028@0.23.1792.1028" timestamp="1598747347875" />
+    <state x="597" y="293" width="598" height="548" key="find.popup/0.23.1792.1031@0.23.1792.1031" timestamp="1598743941202" />
+  </component>
+</project>
