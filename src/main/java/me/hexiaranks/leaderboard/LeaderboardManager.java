@@ -404,7 +404,7 @@ public class LeaderboardManager {
 			return updatedValuesR;
 		}
 		updatedValuesR.clear();
-		main.getPlayerStorage().storePlayersData(PlayerDataType.REBIRTH);
+		main.getPlayerStorage().storePlayersData(PlayerDataType.MASTER);
 		if(main.isMySql()) {
 			String sql = "SELECT * FROM " + main.getDatabase() + "." + main.getTable();
 			MySqlStreamer mySqlStreamer = new MySqlStreamer(main.getConnection());

@@ -27,39 +27,45 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="022ac669-4202-449e-a40e-43fcd2bdfefe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ActionUtil_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/HolographicDisplays_2_4_5_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/LuckPerms_Bukkit_5_1_93.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/MVdWPlaceholderAPI__3_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/PlaceholderAPI_2_10_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/spigot_1_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/spigot_1_16_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/HexiaPrestige_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/HexiaRanks_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/EZPrestige.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Vault.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Paper_1_12_2_b1618.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Paper_1_12_2_b1618.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HexiaPrestige.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HexiaRanks.iml" afterDir="false" />
+    <list default="true" id="022ac669-4202-449e-a40e-43fcd2bdfefe" name="Default Changelist" comment="Init">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Vault.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Vault_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HexiaRanks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HexiaRanks.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/API.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/BookUtil_1_14_4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/BookUtil_1_8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/BookUtil_1_9.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/ReflectionUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/Sound.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/Version.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/multiversion/XMaterial.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/TemplatePlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/commands/MainPluginCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/events/block/BlockClick.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/events/chat/TabComplete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/events/inventory/InventoryClick.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/helpers/ActionSound.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/helpers/MenuUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thirtyvirus/template/helpers/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mastery.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mastery.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/messages.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/HexiaRanks.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/HexiaRanks.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/HexiaRanks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/HexiaRanks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/api/Master.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/api/Master.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/api/MasterLegacy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/api/MasterLegacy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/api/PRXAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/api/PRXAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/api/PRXManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/api/PRXManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/commands/MasteryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/commands/MasteryCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/commands/PRXCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/commands/PRXCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/data/FireworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/data/FireworkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/data/GlobalDataStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/data/GlobalDataStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/data/LevelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/data/LevelType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/data/MasterDataStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/data/MasterDataStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/data/PlayerDataStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/data/PlayerDataStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/events/MasterUpdateCause.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/events/MasterUpdateCause.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/events/PrestigeUpdateCause.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/events/PrestigeUpdateCause.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/events/RankUpdateCause.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/events/RankUpdateCause.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/events/XMasterEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/events/XMasterEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/gui/CustomMasterItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/gui/CustomMasterItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hexiaranks/leaderboard/LeaderboardManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hexiaranks/leaderboard/LeaderboardManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/HexiaRanks$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/HexiaRanks$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/HexiaRanks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/HexiaRanks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/api/PRXAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/api/PRXAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/api/PRXManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/api/PRXManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/commands/PRXCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/commands/PRXCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/data/FireworkManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/data/FireworkManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/data/GlobalDataStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/data/GlobalDataStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/data/LevelType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/data/LevelType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/data/PlayerDataStorage$PlayerDataType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/data/PlayerDataStorage$PlayerDataType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/data/PlayerDataStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/data/PlayerDataStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/events/PrestigeUpdateCause.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/events/PrestigeUpdateCause.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/events/RankUpdateCause.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/events/RankUpdateCause.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/hexiaranks/leaderboard/LeaderboardManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/hexiaranks/leaderboard/LeaderboardManager.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +92,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4032258" />
   </component>
@@ -98,19 +104,6 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -121,8 +114,20 @@
       <updated>1598741996495</updated>
       <workItem from="1598741997794" duration="5613000" />
       <workItem from="1598890717831" duration="1333000" />
-      <workItem from="1598897555701" duration="2343000" />
+      <workItem from="1598897555701" duration="4960000" />
+      <workItem from="1599140899818" duration="7309000" />
+      <workItem from="1599154436556" duration="389000" />
+      <workItem from="1599158606110" duration="352000" />
+      <workItem from="1599159630503" duration="86000" />
     </task>
+    <task id="LOCAL-00001" summary="Init">
+      <created>1598900539564</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598900539564</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +145,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="384" y="119" key="#Project_Structure" timestamp="1598743426952">
       <screen x="0" y="23" width="1792" height="1031" />
@@ -153,19 +162,28 @@
       <screen x="0" y="23" width="1792" height="1026" />
     </state>
     <state x="759" y="438" key="Github.ShareDialog/0.23.1792.1026@0.23.1792.1026" timestamp="1598899369715" />
-    <state x="384" y="120" key="SettingsEditor" timestamp="1598897848374">
-      <screen x="0" y="23" width="1792" height="1026" />
+    <state x="384" y="120" key="SettingsEditor" timestamp="1599142026391">
+      <screen x="0" y="23" width="1792" height="1024" />
     </state>
-    <state x="384" y="120" key="SettingsEditor/0.23.1792.1024@0.23.1792.1024" timestamp="1598897595248" />
+    <state x="384" y="120" key="SettingsEditor/0.23.1792.1024@0.23.1792.1024" timestamp="1599142026391" />
     <state x="384" y="120" key="SettingsEditor/0.23.1792.1026@0.23.1792.1026" timestamp="1598897848374" />
     <state x="384" y="120" key="SettingsEditor/0.23.1792.1028@0.23.1792.1028" timestamp="1598746225990" />
     <state x="384" y="120" key="SettingsEditor/0.23.1792.1030@0.23.1792.1030" timestamp="1598742114497" />
     <state x="384" y="120" key="SettingsEditor/0.23.1792.1031@0.23.1792.1031" timestamp="1598744457510" />
-    <state x="597" y="291" width="598" height="548" key="find.popup" timestamp="1598898853123">
-      <screen x="0" y="23" width="1792" height="1026" />
+    <state x="496" y="274" key="Vcs.Push.Dialog.v2" timestamp="1598900543792">
+      <screen x="0" y="23" width="1792" height="1028" />
     </state>
+    <state x="496" y="274" key="Vcs.Push.Dialog.v2/0.23.1792.1028@0.23.1792.1028" timestamp="1598900543792" />
+    <state x="634" y="290" key="extract.method.dialog" timestamp="1599148122717">
+      <screen x="0" y="23" width="1792" height="1024" />
+    </state>
+    <state x="634" y="290" key="extract.method.dialog/0.23.1792.1024@0.23.1792.1024" timestamp="1599148122717" />
+    <state x="597" y="291" width="608" height="548" key="find.popup" timestamp="1599158788333">
+      <screen x="0" y="23" width="1792" height="1024" />
+    </state>
+    <state x="597" y="291" width="608" height="548" key="find.popup/0.23.1792.1024@0.23.1792.1024" timestamp="1599158788333" />
     <state x="597" y="291" width="598" height="548" key="find.popup/0.23.1792.1026@0.23.1792.1026" timestamp="1598898853123" />
-    <state x="597" y="292" width="598" height="548" key="find.popup/0.23.1792.1028@0.23.1792.1028" timestamp="1598747347875" />
+    <state x="597" y="292" width="608" height="548" key="find.popup/0.23.1792.1028@0.23.1792.1028" timestamp="1598902283120" />
     <state x="597" y="293" width="598" height="548" key="find.popup/0.23.1792.1031@0.23.1792.1031" timestamp="1598743941202" />
   </component>
 </project>

@@ -283,6 +283,7 @@ public class HexiaRanks extends JavaPlugin implements Listener {
     	RegisteredServiceProvider<LuckPerms> provider = Bukkit.getServicesManager().getRegistration(LuckPerms.class);
     	if (provider != null) {
     		luckperms = provider.getProvider();
+			Bukkit.getConsoleSender().sendMessage("§e[§9HexiaRanks§e] §aLuckPerms got provider successfully.");
     	}
     }
 	 
@@ -490,7 +491,8 @@ public class HexiaRanks extends JavaPlugin implements Listener {
 		} else {
 			  Bukkit.getConsoleSender().sendMessage("§e[§9HexiaRanks§e] §2Started without ActionUtil.");
 		}
-		if(Bukkit.getPluginManager().isPluginEnabled("LuckPerms") && isVaultGroups) {
+		if(Bukkit.getPluginManager().isPluginEnabled("LuckPerms") == true) {
+			Bukkit.getConsoleSender().sendMessage("§e[§9HexiaRanks§e] §aLuckPerms Detected. Initializing setup.");
             setupLuckPerms();
             lpUtils = new LuckPermsUtils(luckperms);
 		} else if (Bukkit.getPluginManager().isPluginEnabled("GroupManager") && isVaultGroups) {
@@ -1065,14 +1067,19 @@ public class HexiaRanks extends JavaPlugin implements Listener {
 		Bukkit.getScheduler().runTaskLater(this, () -> {
 		if(isVaultGroups && checkVault) {
 			if(this.vaultPlugin.equalsIgnoreCase("LuckPerms")) {
-				taskChainFactory.newSharedChain("luckperms").async(() -> {
-	    		User lpUser = lpUtils.getUser(playerUUID);
-	    		if(!lpUser.getPrimaryGroup().equalsIgnoreCase(prxAPI.getPlayerRank(playerUUID))) {
-	    			prxAPI.setPlayerRank(playerUUID, lpUser.getPrimaryGroup());
-	    		}
-				}).execute();
+				Bukkit.getConsoleSender().sendMessage("§e[§9HexiaRanks§e] §aLuckPerms Task Chain Linking...");
+				if (p instanceof Player)
+				{
+					Bukkit.getConsoleSender().sendMessage("§e[§9HexiaRanks§e] §aAttempting for playeruuid "+playerUUID.toString());
+					taskChainFactory.newSharedChain("luckperms").async(() -> {
+						User lpUser = luckperms.getUserManager().getUser(playerUUID);
+						if (!lpUser.getPrimaryGroup().equalsIgnoreCase(prxAPI.getPlayerRank(playerUUID))) {
+							prxAPI.setPlayerRank(playerUUID, lpUser.getPrimaryGroup());
+						}
+					}).execute();
+				}
 	    	}
-			} else if (vaultPlugin.equalsIgnoreCase("Vault")) {
+			} else if (this.vaultPlugin.equalsIgnoreCase("Vault")) {
 				String group = perms.getPrimaryGroup(p);
 				if(!group.equalsIgnoreCase(prxAPI.getPlayerRank(p))) {
 					prxAPI.setPlayerRank(p, group);

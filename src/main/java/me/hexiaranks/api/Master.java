@@ -53,7 +53,7 @@ public class Master {
 			prxAPI.taskedPlayers.remove(name);
 			return;
 		}
-		if(master.equalsIgnoreCase("LASTREBIRTH")) {
+		if(master.equalsIgnoreCase("LASTMASTER")) {
 			if(prxAPI.h("lastmaster") != null && !prxAPI.h("lastmaster").isEmpty()) {
 			  for(String line : prxAPI.h("lastmaster")) {
 				  p.sendMessage(prxAPI.c(line));
@@ -132,7 +132,7 @@ public class Master {
 			prxAPI.taskedPlayers.remove(name);
 			return;
 		}
-		MasterUpdateEvent e = new MasterUpdateEvent(player, MasterUpdateCause.REBIRTHUP);
+		MasterUpdateEvent e = new MasterUpdateEvent(player, MasterUpdateCause.MASTERUP);
 		main.getServer().getPluginManager().callEvent(e);
 		if(e.isCancelled()) {
 			prxAPI.taskedPlayers.remove(name);
@@ -239,10 +239,10 @@ public class Master {
 		main.executeCommands(p, replacedCommands);
 		}
 		}
-		String nextMasterSoundName = main.globalStorage.getStringData("Options.masteryound-name");
+		String nextMasterSoundName = main.globalStorage.getStringData("Options.masterSound-name");
 		if(!nextMasterSoundName.isEmpty() && nextMasterSoundName.length() > 1) {
-			float nextMasterSoundPitch = (float)main.globalStorage.getDoubleData("Options.masteryound-pitch");
-		    float nextMasterSoundVolume = (float)main.globalStorage.getDoubleData("Options.masteryound-volume");
+			float nextMasterSoundPitch = (float)main.globalStorage.getDoubleData("Options.masterSound-pitch");
+		    float nextMasterSoundVolume = (float)main.globalStorage.getDoubleData("Options.masterSound-volume");
 			p.playSound(p.getLocation(), Sounds.valueOf(nextMasterSoundName).bukkitSound(), nextMasterSoundVolume, nextMasterSoundPitch);
 		}
 		boolean nextMasterHologramIsEnable = main.globalStorage.getBooleanData("Holograms.master.enable");
@@ -258,7 +258,7 @@ public class Master {
 			main.econ.withdrawPlayer(p, prxAPI.getPlayerMoney(p));
 		}
 		if(main.globalStorage.getBooleanData("MasterOptions.ResetRank")) {
-			RankUpdateEvent xrue = new RankUpdateEvent(p, RankUpdateCause.RANKSET_BYREBIRTH, main.globalStorage.getStringData("defaultrank"));
+			RankUpdateEvent xrue = new RankUpdateEvent(p, RankUpdateCause.RANKSET_BYMASTER, main.globalStorage.getStringData("defaultrank"));
 			Bukkit.getScheduler().runTask(main, () -> {
 				Bukkit.getPluginManager().callEvent(xrue);
 			if(xrue.isCancelled()) {
@@ -268,7 +268,7 @@ public class Master {
 			main.playerStorage.setPlayerRank(p, main.globalStorage.getStringData("defaultrank"));
 		}
 		if(main.globalStorage.getBooleanData("MasterOptions.ResetPrestige")) {
-			PrestigeUpdateEvent xpue = new PrestigeUpdateEvent(p, PrestigeUpdateCause.SETPRESTIGE_BY_REBIRTH);
+			PrestigeUpdateEvent xpue = new PrestigeUpdateEvent(p, PrestigeUpdateCause.SETPRESTIGE_BY_MASTER);
 			Bukkit.getScheduler().runTask(main, () -> {
 				Bukkit.getPluginManager().callEvent(xpue);
 			if(xpue.isCancelled()) {

@@ -775,12 +775,12 @@ public class PRXAPI {
         			double percent = (getPlayerMoney(p) / getPlayerNextMasterCost(p)) * 100;
                		if(percent >= 100) {
                			ps.setPercentage("100");
-               			ps.setLevelType(LevelType.REBIRTH);
+               			ps.setLevelType(LevelType.MASTER);
                			return ps;
                		}
         			String intConverted = numberAPI.toFakeInteger(percent);
         			ps.setPercentage(intConverted);
-        			ps.setLevelType(LevelType.REBIRTH);
+        			ps.setLevelType(LevelType.MASTER);
         			return ps;
     			} else {
     				ps.setPercentage("100");
@@ -822,12 +822,12 @@ public class PRXAPI {
         			double percent = (getPlayerMoney(name) / getPlayerNextMasterCost(p)) * 100;
                		if(percent >= 100) {
                			ps.setPercentage("100");
-               			ps.setLevelType(LevelType.REBIRTH);
+               			ps.setLevelType(LevelType.MASTER);
                			return ps;
                		}
         			String intConverted = numberAPI.toFakeInteger(percent);
         			ps.setPercentage(intConverted);
-        			ps.setLevelType(LevelType.REBIRTH);
+        			ps.setLevelType(LevelType.MASTER);
         			return ps;
     			} else {
     				ps.setPercentage("100");
@@ -1032,7 +1032,7 @@ public class PRXAPI {
         			return globalProgressBar_prestige.getProgressBar();
         		}
     	}
-    	else if(levelType == LevelType.REBIRTH) {
+    	else if(levelType == LevelType.MASTER) {
     		if(isNextProgressFullMasterEnabled && is100) {
         		return nextProgressFullMaster;
         		} else {
@@ -1069,7 +1069,7 @@ public class PRXAPI {
         			return globalProgressBar_prestige.getProgressBar();
         		}
     	}
-    	if(getPlayerNextPercentageOnline(p, name).getLevelType() == LevelType.REBIRTH) {
+    	if(getPlayerNextPercentageOnline(p, name).getLevelType() == LevelType.MASTER) {
     		if(main.globalStorage.getBooleanData("PlaceholderAPI.next-progress-full-ismaster-enabled")
         			&& getPlayerNextPercentageOnline(p, name).getPercentage().equals("100")) {
         		return main.globalStorage.getStringData("PlaceholderAPI.next-progress-full-ismaster");
@@ -1115,7 +1115,7 @@ public class PRXAPI {
         			return globalProgressBarExtended_prestige.getProgressBar();
         		}
     	}
-    	else if(levelType == LevelType.REBIRTH) {
+    	else if(levelType == LevelType.MASTER) {
     		if(isNextProgressFullMasterEnabled && is100) {
         		return nextProgressFullMaster;
         		} else {
@@ -1152,7 +1152,7 @@ public class PRXAPI {
         			return globalProgressBarExtended_prestige.getProgressBar();
         		}
     	}
-    	if(getPlayerNextPercentageOnline(p, name).getLevelType() == LevelType.REBIRTH) {
+    	if(getPlayerNextPercentageOnline(p, name).getLevelType() == LevelType.MASTER) {
     		if(main.globalStorage.getBooleanData("PlaceholderAPI.next-progress-full-ismaster-enabled")
         			&& getPlayerNextPercentageOnline(p, name).getPercentage().equals("100")) {
         		return main.globalStorage.getStringData("PlaceholderAPI.next-progress-full-ismaster");
@@ -1998,7 +1998,7 @@ public class PRXAPI {
 		}
 		String currentMaster = main.playerStorage.getPlayerMaster(offlinePlayer);
 		String nextMaster = main.masterStorage.getNextMasterName(currentMaster);
-		return !nextMaster.equalsIgnoreCase("LASTREBIRTH");
+		return !nextMaster.equalsIgnoreCase("LASTMASTER");
 	}
 	
 	public boolean hasNextMaster(UUID uuid) {
@@ -2007,7 +2007,7 @@ public class PRXAPI {
 		}
 		String currentMaster = main.playerStorage.getPlayerMaster(uuid);
 		String nextMaster = main.masterStorage.getNextMasterName(currentMaster);
-		return !nextMaster.equalsIgnoreCase("LASTREBIRTH");
+		return !nextMaster.equalsIgnoreCase("LASTMASTER");
 	}
 	   /**
 	    * <p><i>this method is thread-safe (can be called from an Async Task).
@@ -3215,7 +3215,7 @@ public class PRXAPI {
 		if(!p.hasPermission(main.masterCommand.getPermission()) && !p.hasPermission("*")) {
 			return false;
 		}
-		if(master.equalsIgnoreCase("LASTREBIRTH")) {
+		if(master.equalsIgnoreCase("LASTMASTER")) {
 			return false;
 		}
 		if(prxAPI.getPlayerNextMasterCost(p) > prxAPI.getPlayerMoney(p)) {

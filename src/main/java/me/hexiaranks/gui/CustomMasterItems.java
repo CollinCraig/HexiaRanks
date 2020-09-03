@@ -26,18 +26,18 @@ public class CustomMasterItems {
 		for(String master : main.masterStorage.getMasterData().keySet()) {
 			for(int i = 0; i < 3; i++) {
 				LevelState ls = LevelState.values()[i];
-				if(main.getCustomItemsManager().hasCustomLevelItem(LevelType.REBIRTH, ls) && main.getCustomItemsManager().hasCustomFormat(LevelType.REBIRTH, ls, master)) {
+				if(main.getCustomItemsManager().hasCustomLevelItem(LevelType.MASTER, ls) && main.getCustomItemsManager().hasCustomFormat(LevelType.MASTER, ls, master)) {
 					MasterItem ri = new MasterItem();
 					MasterState rs = new MasterState();
 					rs.setLevelState(ls);
 					rs.setMaster(master);
-					ri.setMaterial(main.getCustomItemsManager().readCustomLevelItemName(LevelType.REBIRTH, ls, master));
-					ri.setAmount(main.getCustomItemsManager().readCustomLevelItemAmount(LevelType.REBIRTH, ls, master));
-					ri.setDisplayName(gds().translateHexColorCodes(main.getCustomItemsManager().readCustomLevelItemDisplayName(LevelType.REBIRTH, ls, master)));
-					ri.setLore(gds().translateHexColorCodes(main.getCustomItemsManager().readCustomLevelItemLore(LevelType.REBIRTH, ls, master)));
-					ri.setEnchantments(main.getCustomItemsManager().readCustomLevelItemEnchantments(LevelType.REBIRTH, ls, master));
-					ri.setFlags(main.getCustomItemsManager().readCustomLevelItemFlags(LevelType.REBIRTH, ls, master));
-					ri.setCommands(gds().translateHexColorCodes(main.getCustomItemsManager().readCustomLevelItemCommands(LevelType.REBIRTH, ls, master)));
+					ri.setMaterial(main.getCustomItemsManager().readCustomLevelItemName(LevelType.MASTER, ls, master));
+					ri.setAmount(main.getCustomItemsManager().readCustomLevelItemAmount(LevelType.MASTER, ls, master));
+					ri.setDisplayName(gds().translateHexColorCodes(main.getCustomItemsManager().readCustomLevelItemDisplayName(LevelType.MASTER, ls, master)));
+					ri.setLore(gds().translateHexColorCodes(main.getCustomItemsManager().readCustomLevelItemLore(LevelType.MASTER, ls, master)));
+					ri.setEnchantments(main.getCustomItemsManager().readCustomLevelItemEnchantments(LevelType.MASTER, ls, master));
+					ri.setFlags(main.getCustomItemsManager().readCustomLevelItemFlags(LevelType.MASTER, ls, master));
+					ri.setCommands(gds().translateHexColorCodes(main.getCustomItemsManager().readCustomLevelItemCommands(LevelType.MASTER, ls, master)));
 					customMasterItems.put(rs.toString(), ri);
 				}
 			}

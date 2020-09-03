@@ -29,7 +29,7 @@ public class FireworkManager {
 				return new HashMap<String, Object>();
 			}
 			return main.getConfigManager().prestigesConfig.getConfigurationSection("Prestiges." + levelName + ".firework-builder").getValues(false);
-		} else if (levelType == LevelType.REBIRTH) {
+		} else if (levelType == LevelType.MASTER) {
 			if(main.getConfigManager().masteryConfig.getConfigurationSection("Mastery." + levelName + ".firework-builder") == null) {
 				return new HashMap<String, Object>();
 			}

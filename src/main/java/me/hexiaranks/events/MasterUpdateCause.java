@@ -1,6 +1,6 @@
 package me.hexiaranks.events;
 
-public enum MasterUpdateCause {REBIRTHUP, SETREBIRTH, DELREBIRTH, OTHER;
+public enum MasterUpdateCause {MASTERUP, SETMASTER, DELMASTER, OTHER;
 
 	private static MasterUpdateCause cause;
 	

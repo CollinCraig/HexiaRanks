@@ -1084,7 +1084,7 @@ public class PlayerDataStorage {
 	}
 	
 	public enum PlayerDataType {
-		RANK, PRESTIGE, REBIRTH, NAME, ALL
+		RANK, PRESTIGE, MASTER, NAME, ALL
 	}
 	
 	public void storePlayerData(UUID uuid, PlayerDataType playerDataType) {
@@ -1096,7 +1096,7 @@ public class PlayerDataStorage {
 			main.getConfigManager().rankDataConfig.set("players." + key + ".path", rp.getPathName());
 		} else if (playerDataType == PlayerDataType.PRESTIGE) {
 			main.getConfigManager().prestigeDataConfig.set("players." + key, pdh.getPrestige());
-		} else if (playerDataType == PlayerDataType.REBIRTH) { 
+		} else if (playerDataType == PlayerDataType.MASTER) {
 			main.getConfigManager().masterDataConfig.set("players." + key, pdh.getMaster());
 		} else if (playerDataType == PlayerDataType.NAME) {
 			main.getConfigManager().rankDataConfig.set("players." + key + ".name", pdh.getName());
@@ -1128,7 +1128,7 @@ public class PlayerDataStorage {
 			main.getConfigManager().rankDataConfig.set("players." + key + ".path", rp.getPathName());
 		} else if (playerDataType == PlayerDataType.PRESTIGE) {
 			main.getConfigManager().prestigeDataConfig.set("players." + key, pdh.getPrestige());
-		} else if (playerDataType == PlayerDataType.REBIRTH) { 
+		} else if (playerDataType == PlayerDataType.MASTER) {
 			main.getConfigManager().masterDataConfig.set("players." + key, pdh.getMaster());
 		} else if (playerDataType == PlayerDataType.NAME) {
 			main.getConfigManager().rankDataConfig.set("players." + key + ".name", pdh.getName());
@@ -1159,7 +1159,7 @@ public class PlayerDataStorage {
 		} else if (playerDataType == PlayerDataType.PRESTIGE) {
 			main.getConfigManager().prestigeDataConfig.set("players." + key, pdh.getPrestige());
 			savePrestigeDisk = true;
-		} else if (playerDataType == PlayerDataType.REBIRTH) { 
+		} else if (playerDataType == PlayerDataType.MASTER) {
 			main.getConfigManager().masterDataConfig.set("players." + key, pdh.getMaster());
 			saveMasterDisk = true;
 		} else if (playerDataType == PlayerDataType.NAME) {
@@ -1199,7 +1199,7 @@ public class PlayerDataStorage {
 		} else if (playerDataType == PlayerDataType.PRESTIGE) {
 			main.getConfigManager().prestigeDataConfig.set("players." + key, pdh.getPrestige());
 			if(saveToDisk) main.getConfigManager().savePrestigeDataConfig();
-		} else if (playerDataType == PlayerDataType.REBIRTH) { 
+		} else if (playerDataType == PlayerDataType.MASTER) {
 			main.getConfigManager().masterDataConfig.set("players." + key, pdh.getMaster());
 			if(saveToDisk) main.getConfigManager().saveMasterDataConfig();
 		} else if (playerDataType == PlayerDataType.NAME) {

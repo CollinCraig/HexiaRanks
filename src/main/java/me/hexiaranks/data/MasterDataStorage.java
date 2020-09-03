@@ -61,7 +61,7 @@ public class MasterDataStorage {
                 int requiredPrestiges = 0;
                 requiredPrestiges = loadInt("Mastery." + masterName + ".required_prestiges");
 				MasterRandomCommands randomCommandsManager = new MasterRandomCommands(masterName, false, true);
-				FireworkManager fireworkManager = new FireworkManager(masterName, LevelType.REBIRTH, "master");
+				FireworkManager fireworkManager = new FireworkManager(masterName, LevelType.MASTER, "master");
 				boolean sendFirework = main.getConfigManager().masteryConfig.getBoolean("Mastery." + masterName + ".send-firework");
 				MasterDataHandler rbdh = new MasterDataHandler(masterName);
 				Map<String, Double> numberRequirements = new HashMap<>();
@@ -150,7 +150,7 @@ public class MasterDataStorage {
 		List<String> addPermissionList = main.getConfigManager().masteryConfig.getStringList("Mastery." + masterName + ".addpermission");
 		List<String> delPermissionList = main.getConfigManager().masteryConfig.getStringList("Mastery." + masterName + ".delpermission");
 		MasterRandomCommands randomCommandsManager = new MasterRandomCommands(masterName, true);
-		FireworkManager fireworkManager = new FireworkManager(masterName, LevelType.REBIRTH, "master");
+		FireworkManager fireworkManager = new FireworkManager(masterName, LevelType.MASTER, "master");
 		boolean sendFirework = main.getConfigManager().masteryConfig.getBoolean("Mastery." + masterName + ".send-firework");
 		MasterDataHandler rbdh = new MasterDataHandler(masterName);
 		rbdh.setName(masterName);
@@ -272,7 +272,7 @@ public class MasterDataStorage {
 	
 	@SuppressWarnings("unchecked")
 	public void setData(String node, Object value) {
-		if(value == null || node.contains("LASTREBIRTH")) {
+		if(value == null || node.contains("LASTMASTER")) {
 			return;
 		}
 		if(value instanceof Integer) {

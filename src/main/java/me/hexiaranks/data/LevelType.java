@@ -1,7 +1,7 @@
 package me.hexiaranks.data;
 
 public enum LevelType {
-   RANK,PRESTIGE,REBIRTH,OTHER,UNKNOWN;
+   RANK,PRESTIGE,MASTER,OTHER,UNKNOWN;
    
    private static LevelType levelType = UNKNOWN;
 	

@@ -1,6 +1,6 @@
 package me.hexiaranks.events;
 
-public enum PrestigeUpdateCause {PRESTIGEUP, SETPRESTIGE, DELPRESTIGE, @Deprecated AUTOPRESTIGE, SETPRESTIGE_BY_REBIRTH
+public enum PrestigeUpdateCause {PRESTIGEUP, SETPRESTIGE, DELPRESTIGE, @Deprecated AUTOPRESTIGE, SETPRESTIGE_BY_MASTER
 	,PRESTIGE_BY_RANKUPMAX, OTHER;
 
 	private static PrestigeUpdateCause cause;

@@ -66,19 +66,19 @@ public class PRXCommand extends BukkitCommand {
 				,"%hexiaranks_master_name%", "%hexiaranks_master_displayname%"
 				,"%hexiaranks_nextmaster_name%" ,"%hexiaranks_nextmaster_displayname%"
 				,"%hexiaranks_nextmaster_cost%", "%hexiaranks_nextmaster_cost_formatted%"
-				,"%prisonranksx_master_displayname_<master>%", "%prisonranksx_master_cost_<master>%"
-				,"%prisonranksx_master_costformatted_<master>%", "%prisonranksx_has_mastered%"
-				,"%prisonranksx_master_name_<playername>%", "%prisonranksx_nextmaster_name_<playername>%"
-				,"%prisonranksx_nextmaster_cost_plain%", "%prisonranksx_nextmaster_cost_integer%"
-				,"%prisonranksx_nextmaster_cost_integer_plain%", "%prisonranksx_name_rank_<number>%"
-				,"%prisonranksx_value_rank_<number>%", "%prisonranksx_name_prestige_<number>%"
-				,"%prisonranksx_value_prestige_<number>%", "%prisonranksx_name_master_<number>%"
-				,"%prisonranksx_value_master_<number>%", "%prisonranksx_money%"
-				,"%prisonranksx_money_nonformatted%", "%prisonranksx_money_decimalformatted%"
-				,"%prisonranksx_next_percentage%", "%prisonranksx_next_percentage_decimal%"
-				,"%prisonranksx_next_progress%", "%prisonranksx_next_progress_double%"
-				,"%prisonranksx_plain_{placeholder}%", "%prisonranksx_current_displayname%"
-				, "%prisonranksx_name_stage_<number>%", "%prisonranksx_value_stage_<number>%", ".");
+				,"%hexiaranks_master_displayname_<master>%", "%hexiaranks_master_cost_<master>%"
+				,"%hexiaranks_master_costformatted_<master>%", "%hexiaranks_has_mastered%"
+				,"%hexiaranks_master_name_<playername>%", "%hexiaranks_nextmaster_name_<playername>%"
+				,"%hexiaranks_nextmaster_cost_plain%", "%hexiaranks_nextmaster_cost_integer%"
+				,"%hexiaranks_nextmaster_cost_integer_plain%", "%hexiaranks_name_rank_<number>%"
+				,"%hexiaranks_value_rank_<number>%", "%hexiaranks_name_prestige_<number>%"
+				,"%hexiaranks_value_prestige_<number>%", "%hexiaranks_name_master_<number>%"
+				,"%hexiaranks_value_master_<number>%", "%hexiaranks_money%"
+				,"%hexiaranks_money_nonformatted%", "%hexiaranks_money_decimalformatted%"
+				,"%hexiaranks_next_percentage%", "%hexiaranks_next_percentage_decimal%"
+				,"%hexiaranks_next_progress%", "%hexiaranks_next_progress_double%"
+				,"%hexiaranks_plain_{placeholder}%", "%hexiaranks_current_displayname%"
+				, "%hexiaranks_name_stage_<number>%", "%hexiaranks_value_stage_<number>%", ".");
 		placeholders = CollectionUtils.columnizeList(placeholders, 3, ", ", ".");
 	}
 
@@ -509,7 +509,7 @@ public class PRXCommand extends BukkitCommand {
         				return true;
         			}
         			XUser user = XUser.getXUser(p);
-            		XMasterUpdateEvent e = new XMasterUpdateEvent(p, MasterUpdateCause.DELREBIRTH);
+            		XMasterUpdateEvent e = new XMasterUpdateEvent(p, MasterUpdateCause.DELMASTER);
             		Bukkit.getPluginManager().callEvent(e);
             		if(e.isCancelled()) {
             			return true;
@@ -612,7 +612,7 @@ public class PRXCommand extends BukkitCommand {
         			return true;
         		}
         		Player p = Bukkit.getPlayer(parsedPlayerName);
-        		XMasterUpdateEvent e = new XMasterUpdateEvent(p, MasterUpdateCause.SETREBIRTH);
+        		XMasterUpdateEvent e = new XMasterUpdateEvent(p, MasterUpdateCause.SETMASTER);
         		Bukkit.getServer().getPluginManager().callEvent(e);
         		if(e.isCancelled()) {
         			return true;
@@ -709,7 +709,7 @@ public class PRXCommand extends BukkitCommand {
         		}
         		Player p = Bukkit.getPlayer(args[1]);
         		XUser user = XUser.getXUser(p);
-        		XMasterUpdateEvent e = new XMasterUpdateEvent(p, MasterUpdateCause.DELREBIRTH);
+        		XMasterUpdateEvent e = new XMasterUpdateEvent(p, MasterUpdateCause.DELMASTER);
         		Bukkit.getPluginManager().callEvent(e);
         		if(e.isCancelled()) {
         			return true;
@@ -860,7 +860,7 @@ public class PRXCommand extends BukkitCommand {
         			main.getLogger().warning(p.getName() + " data went wrong. possible reasons:");
         			main.getLogger().warning("some ranks on ranks.yml has an invalid nextrank, (not matching case, rank doesn't exist)");
         			main.getLogger().warning("player has old/wrong rankdata in rankdata.yml therefore rankdata.yml must be deleted while the server is offline to prevent data loss");
-        			main.getLogger().warning("rankup-vault-groups option on config.yml is enabled while you don't use it (not having groups in the permission plugin that match prisonranksx ranks on the main track)");
+        			main.getLogger().warning("rankup-vault-groups option on config.yml is enabled while you don't use it (not having groups in the permission plugin that match hexiaranks ranks on the main track)");
         		}
         		sender.sendMessage(main.prxAPI.g("setrank").replace("%target%", p.getName())
         				.replace("%settedrank%", newRank));
@@ -976,7 +976,7 @@ public class PRXCommand extends BukkitCommand {
     			sender.sendMessage(main.prxAPI.g("master-notfound").replace("%master%", newMaster));
     			return true;
     		}
-    		XMasterUpdateEvent e = new XMasterUpdateEvent(p, MasterUpdateCause.SETREBIRTH);
+    		XMasterUpdateEvent e = new XMasterUpdateEvent(p, MasterUpdateCause.SETMASTER);
     		Bukkit.getPluginManager().callEvent(e);
     		if(e.isCancelled()) {
     			return true;

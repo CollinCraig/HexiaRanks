@@ -40,11 +40,11 @@ public class XMasterEvent extends Event implements Cancellable {
 	}
 	/**
 	 * master reasons strings:
-	 * - REBIRTHUP
-	 * - REBIRTHUP_BY_OTHER
-	 * - SETREBIRTH
-	 * - RESETREBIRTH
-	 * - DELREBIRTH
+	 * - MASTERUP
+	 * - MASTERUP_BY_OTHER
+	 * - SETMASTER
+	 * - RESETMASTER
+	 * - DELMASTER
 	 */
 	public String getMasterReason() {
 		return this.masterReason;

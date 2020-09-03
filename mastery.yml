@@ -11,7 +11,7 @@ Mastery:
   R2:
     display: "&4&l[R2]"
     cost: 1234567899.0
-    nextmaster: LASTREBIRTH
+    nextmaster: LASTMASTER
     executecmds: []
     broadcast: []
     msg: []

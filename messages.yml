@@ -74,6 +74,7 @@ Messages:
   prestige: "&aYou have prestiged to &r%nextprestige_display%"
   forceprestige: "&aYou forced a prestige promotion to &f%target%"
   noprestige: "&aYou can't prestige at this rank."
+  nomaster: "&aYou can't use mastery at this rank."
   # placeholders: %player%
   delplayerprestige: "&cDeleted &e%player%''s &cPrestige"
   # placeholders: %nextprestige% %nextprestige_display% %nextprestige_cost% %nextprestige_cost_formatted%

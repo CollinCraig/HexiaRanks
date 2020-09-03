@@ -38,7 +38,7 @@ private HexiaRanks main = (HexiaRanks)Bukkit.getPluginManager().getPlugin("Hexia
 			return true;
 		}
 		if(args.length == 0) {
-			if(main.globalStorage.getBooleanData("Options.GUI-REBIRTHLIST")) {
+			if(main.globalStorage.getBooleanData("Options.GUI-MASTERLIST")) {
 				main.guiManager.openMasteryGUI((Player)sender);
 				return true;
 			}

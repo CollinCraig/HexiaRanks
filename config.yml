@@ -61,7 +61,7 @@ Options:
   # You want a cool gui prestige list? use this [change it to true].
   GUI-PRESTIGELIST: false
   # yep
-  GUI-REBIRTHLIST: false
+  GUI-MASTERLIST: false
   # Want your players to dance when they prestige? put a sound name here otherwise make it like this "" to disable.
   prestigesound-name: "LEVEL_UP"
   # Sound volume if you make it higher other players will hear it.
@@ -75,11 +75,11 @@ Options:
   # -
   rankupsound-pitch: 1.0
   # -
-  masteryound-name: "GHAST_SCREAM"
+  masterSound-name: "GHAST_SCREAM"
   # -
-  masteryound-volume: 1.0
+  masterSound-volume: 1.0
   # -
-  masteryound-pitch: 1.0
+  masterSound-pitch: 1.0
   # if you want every rank to have a restricted permission. the permission is: "hexiaranks.rankup.<the_rank_that_you_will_go_to>" without the quotes.
   per-rank-permission: false
   # if you don't want the server to be a text garbage when the players rankup max then disable this by setting it to true.
@@ -89,9 +89,9 @@ Options:
   # this is literally useless just disable it by making it true. except if you want the players to show their coolness when they rankup max.
   rankupmax-rankupmsglastrankonly: true
   # Want vault plugin to handle the ranks instead of hexiaranks? then use this.
-  rankup-vault-groups: false
+  rankup-vault-groups: true
   # You can write here "GroupManager" or "PermissionsEX" or "LuckPerms" or "Vault" otherwise you can write the command using these placeholders %player% and %rank%.
-  rankup-vault-groups-plugin: "Vault"
+  rankup-vault-groups-plugin: "LuckPerms"
   # Check if player group in the said plugin doesn't match the one in hexiaranks then update it.
   rankup-vault-groups-check: true
   # enable autorankup task.

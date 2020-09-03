@@ -828,7 +828,7 @@ public class PRXManager {
 	    MasterDataHandler rdh = new MasterDataHandler(name);
 		rdh.setName(name);
 		rdh.setCost(cost);
-		rdh.setNextMasterName("LASTREBIRTH");
+		rdh.setNextMasterName("LASTMASTER");
 		rdh.setDisplayName("[" + name + "]");
 		rdh.setMsg(emptyList);
 		rdh.setBroadcastMessages(emptyList);
@@ -859,7 +859,7 @@ public class PRXManager {
 	    MasterDataHandler rdh = new MasterDataHandler(name);
 		rdh.setName(name);
 		rdh.setCost(cost);
-		rdh.setNextMasterName("LASTREBIRTH");
+		rdh.setNextMasterName("LASTMASTER");
 		rdh.setDisplayName(displayName);
 		rdh.setMsg(emptyList);
 		rdh.setBroadcastMessages(emptyList);
@@ -929,7 +929,7 @@ public class PRXManager {
 				main.masterStorage.saveMasterData(previousMaster);
 			} else {
 				MasterDataHandler rdh = main.masterStorage.getDataHandler(previousMaster);
-				rdh.setNextMasterName("LASTREBIRTH");
+				rdh.setNextMasterName("LASTMASTER");
 				rdh.setNextMasterDisplayName(null);
 				main.masterStorage.getMasterData().put(previousMaster, rdh);
 				main.masterStorage.saveMasterData(previousMaster);
